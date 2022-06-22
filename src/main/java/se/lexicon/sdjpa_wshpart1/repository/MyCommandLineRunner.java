@@ -17,12 +17,12 @@ public class MyCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        AppUser appUser1 = new AppUser("Hamed", "Karimi", "HMDKRM.RTJ@GMAIL.COM");
+        /*AppUser appUser1 = new AppUser("Hamed", "Karimi", "HMDKRM.RTJ@GMAIL.COM");
         AppUser insertedRowAppUser1 = appUserRepository.save(appUser1);
         System.out.println(insertedRowAppUser1.getId());
         System.out.println(insertedRowAppUser1.getFirstName());
         System.out.println(insertedRowAppUser1.getLastName());
-        System.out.println(insertedRowAppUser1.getEmail());
+        System.out.println(insertedRowAppUser1.getEmail());*/
 
 
 

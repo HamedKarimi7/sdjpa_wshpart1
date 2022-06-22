@@ -25,6 +25,8 @@ public class AppUser {
         this.id = id;
 
 
+
+
     }
 
     public AppUser(String firstName, String lastName, String email) {
@@ -76,5 +78,15 @@ public class AppUser {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, email);
+    }
+
+    @Override
+    public String toString() {
+        return "AppUser{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
