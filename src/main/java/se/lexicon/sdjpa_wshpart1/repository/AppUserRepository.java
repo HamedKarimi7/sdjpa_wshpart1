@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface AppUserRepository extends CrudRepository<AppUser, Integer> {
 
-    List<AppUser> findByFirstName(String firstName);
+   //if we want to find by firstName and it's not available in crud repository default then follow like below
+    // List<AppUser> findByFirstName(String firstName);
 
 }
