@@ -8,10 +8,12 @@ import java.util.Optional;
 
 public interface AppUserRepository extends CrudRepository<AppUser, Integer> {
 
-   //if we want to find by firstName and it's not available in crud repository default then follow like below
-    // List<AppUser> findByFirstName(String firstName);
+   //if we want to find by firstName or email,..(except ID cause its generate auto )
+    //  and it's not available in crud repository default then follow like below and add what you want to find based on
 
-    //List<AppUser> findByFirstNameAndLastName(String firstName, String lastName);
-    //List<AppUser> findByFirstNameIgnoreCaseAndLastNameIgnoreCase(String firstName, String lastName);
-    //Optional<AppUser> findByEmailIgnoreCase(String email);
+        Optional<AppUser> findByEmailIgnoreCase(String email);
+        List<AppUser> findByFirstName(String firstName);
+        List<AppUser> findByFirstNameAndLastName(String firstName, String lastName);
+        List<AppUser> findByFirstNameIgnoreCaseAndLastNameIgnoreCase(String firstName, String lastName);
+
 }
